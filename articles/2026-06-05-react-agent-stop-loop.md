@@ -50,7 +50,7 @@ only_fans_can_comment: false
 
 这句话先记住。
 
-![ReAct Agent 的停止边界](assets/react-agent-stop-loop-boundary.png)
+![ReAct Agent 的停止边界](assets/2026-06-05-react-agent-stop-loop-boundary.png)
 
 图：ReAct 可以循环探索，但外层必须有最大步数、超时、重复检测和危险动作确认这些边界。
 

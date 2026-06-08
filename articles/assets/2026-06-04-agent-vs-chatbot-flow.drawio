@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2026-06-04T00:00:00.000Z" agent="drawio-chart" version="24.0.0">
+  <diagram name="Agent vs ChatBot" id="agent-vs-chatbot">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="900" pageHeight="560" math="0" shadow="0" background="#F8FAFC">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="bg" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="900" height="560" as="geometry"/>
+        </mxCell>
+        <mxCell id="title" value="Agent 比普通 ChatBot 多了什么？" style="text;html=1;strokeColor=none;fillColor=none;fontFamily=system-ui, -apple-system, PingFang SC, Microsoft YaHei, sans-serif;fontSize=24;fontStyle=1;fontColor=#2D3748;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="130" y="30" width="640" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="subtitle" value="ChatBot 更像对话；Agent 会围绕目标调用工具、观察结果、继续推进" style="text;html=1;strokeColor=none;fillColor=none;fontFamily=system-ui, -apple-system, PingFang SC, Microsoft YaHei, sans-serif;fontSize=13;fontColor=#64748B;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="120" y="72" width="660" height="28" as="geometry"/>
+        </mxCell>
+        <mxCell id="chat_group" value="普通 ChatBot" style="swimlane;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#0891B2;dashed=1;strokeWidth=2;fontColor=#2D3748;fontFamily=system-ui, -apple-system, PingFang SC, Microsoft YaHei, sans-serif;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="42" y="120" width="378" height="325" as="geometry"/>
+        </mxCell>
+        <mxCell id="agent_group" value="Agent" style="swimlane;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#7C3AED;dashed=1;strokeWidth=2;fontColor=#2D3748;fontFamily=system-ui, -apple-system, PingFang SC, Microsoft YaHei, sans-serif;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="120" width="378" height="325" as="geometry"/>
+        </mxCell>
+        <mxCell id="chat_user" value="用户提问&lt;br&gt;“能退款吗？”" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0891B2;strokeColor=none;fontColor=#FFFFFF;fontFamily=system-ui, -apple-system, PingFang SC, Microsoft YaHei, sans-serif;fontSize=13;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="85" y="175" width="135" height="58" as="geometry"/>
+        </mxCell>
+        <mxCell id="chatbot" value="ChatBot&lt;br&gt;根据上下文回答" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#4CA497;strokeColor=none;fontColor=#FFFFFF;fontFamily=system-ui, -apple-system, PingFang SC, Microsoft YaHei, sans-serif;fontSize=13;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="175" width="135" height="58" as="geometry"/>
+        </mxCell>
+        <mxCell id="chat_answer" value="返回一段解释&lt;br&gt;“一般 7 天内可退”" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E4C189;strokeColor=none;fontColor=#2D3748;fontFamily=system-ui, -apple-system, PingFang SC, Microsoft YaHei, sans-serif;fontSize=13;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="145" y="300" width="180" height="62" as="geometry"/>
+        </mxCell>
+        <mxCell id="chat_note" value="重点：主要在“回答问题”这一层" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#BFDBFE;fontColor=#2D3748;fontFamily=system-ui, -apple-system, PingFang SC, Microsoft YaHei, sans-serif;fontSize=13;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="95" y="390" width="270" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="agent_user" value="用户目标&lt;br&gt;“查 A001，能退就提交”" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#005D7B;strokeColor=none;fontColor=#FFFFFF;fontFamily=system-ui, -apple-system, PingFang SC, Microsoft YaHei, sans-serif;fontSize=13;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="515" y="165" width="142" height="62" as="geometry"/>
+        </mxCell>
+        <mxCell id="agent_decide" value="决定下一步&lt;br&gt;先查订单" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#7C3AED;strokeColor=none;fontColor=#FFFFFF;fontFamily=system-ui, -apple-system, PingFang SC, Microsoft YaHei, sans-serif;fontSize=13;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="685" y="165" width="142" height="62" as="geometry"/>
+        </mxCell>
+        <mxCell id="tool" value="调用工具&lt;br&gt;get_order(A001)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E99151;strokeColor=none;fontColor=#FFFFFF;fontFamily=system-ui, -apple-system, PingFang SC, Microsoft YaHei, sans-serif;fontSize=13;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="685" y="260" width="142" height="62" as="geometry"/>
+        </mxCell>
+        <mxCell id="observe" value="观察结果&lt;br&gt;未开票，3 天前购买" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#4CA497;strokeColor=none;fontColor=#FFFFFF;fontFamily=system-ui, -apple-system, PingFang SC, Microsoft YaHei, sans-serif;fontSize=13;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="515" y="260" width="142" height="62" as="geometry"/>
+        </mxCell>
+        <mxCell id="finish" value="继续推进&lt;br&gt;确认后提交退款申请" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E4C189;strokeColor=none;fontColor=#2D3748;fontFamily=system-ui, -apple-system, PingFang SC, Microsoft YaHei, sans-serif;fontSize=13;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="355" width="165" height="62" as="geometry"/>
+        </mxCell>
+        <mxCell id="note" value="记住：Agent 不是更会聊天，而是能围绕目标，用工具把任务往前推。" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#BFDBFE;fontColor=#2D3748;fontFamily=system-ui, -apple-system, PingFang SC, Microsoft YaHei, sans-serif;fontSize=14;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="115" y="488" width="670" height="38" as="geometry"/>
+        </mxCell>
+        <mxCell id="c1" value="问" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;strokeWidth=2;strokeColor=#94A3B8;labelBackgroundColor=#F8FAFC;fontFamily=system-ui, -apple-system, PingFang SC, Microsoft YaHei, sans-serif;fontSize=12;fontColor=#64748B;" edge="1" source="chat_user" target="chatbot" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="c2" value="回" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;strokeWidth=2;strokeColor=#94A3B8;labelBackgroundColor=#F8FAFC;fontFamily=system-ui, -apple-system, PingFang SC, Microsoft YaHei, sans-serif;fontSize=12;fontColor=#64748B;" edge="1" source="chatbot" target="chat_answer" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="a1" value="目标" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;strokeWidth=2;strokeColor=#94A3B8;labelBackgroundColor=#F8FAFC;fontFamily=system-ui, -apple-system, PingFang SC, Microsoft YaHei, sans-serif;fontSize=12;fontColor=#64748B;" edge="1" source="agent_user" target="agent_decide" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="a2" value="调用" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;strokeWidth=2;strokeColor=#94A3B8;labelBackgroundColor=#F8FAFC;fontFamily=system-ui, -apple-system, PingFang SC, Microsoft YaHei, sans-serif;fontSize=12;fontColor=#64748B;" edge="1" source="agent_decide" target="tool" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="a3" value="观察" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;strokeWidth=2;strokeColor=#94A3B8;labelBackgroundColor=#F8FAFC;fontFamily=system-ui, -apple-system, PingFang SC, Microsoft YaHei, sans-serif;fontSize=12;fontColor=#64748B;" edge="1" source="tool" target="observe" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="a4" value="继续" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;strokeWidth=2;strokeColor=#94A3B8;labelBackgroundColor=#F8FAFC;fontFamily=system-ui, -apple-system, PingFang SC, Microsoft YaHei, sans-serif;fontSize=12;fontColor=#64748B;" edge="1" source="observe" target="finish" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
