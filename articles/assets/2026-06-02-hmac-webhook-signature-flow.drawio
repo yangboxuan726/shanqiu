@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2026-06-02T00:00:00.000Z" agent="drawio-chart" version="24.0.0">
+  <diagram name="HMAC Webhook Signature Flow" id="hmac-webhook-flow">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="900" pageHeight="560" math="0" shadow="0" background="#F8FAFC">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="HMAC 签名在 webhook 里到底防什么？" style="text;html=1;strokeColor=none;fillColor=none;fontFamily=system-ui, -apple-system, PingFang SC, Microsoft YaHei, sans-serif;fontSize=24;fontStyle=1;fontColor=#2D3748;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="130" y="30" width="640" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="subtitle" value="核心：发送方和接收方用同一个 secret，对原始 body 算出同一份签名" style="text;html=1;strokeColor=none;fillColor=none;fontFamily=system-ui, -apple-system, PingFang SC, Microsoft YaHei, sans-serif;fontSize=13;fontColor=#64748B;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="150" y="70" width="600" height="28" as="geometry"/>
+        </mxCell>
+        <mxCell id="sender" value="第三方平台&lt;br&gt;支付 / GitHub / 短信服务" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#64748B;strokeColor=none;fontColor=#FFFFFF;fontFamily=system-ui, -apple-system, PingFang SC, Microsoft YaHei, sans-serif;fontSize=13;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="150" width="150" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="body" value="原始 body&lt;br&gt;raw_body" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0891B2;strokeColor=none;fontColor=#FFFFFF;fontFamily=system-ui, -apple-system, PingFang SC, Microsoft YaHei, sans-serif;fontSize=13;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="120" width="140" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="secret1" value="secret&lt;br&gt;双方预先保存" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#7C3AED;strokeColor=none;fontColor=#FFFFFF;fontFamily=system-ui, -apple-system, PingFang SC, Microsoft YaHei, sans-serif;fontSize=13;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="215" width="140" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="sign" value="计算 HMAC-SHA256&lt;br&gt;signature = HMAC(secret, raw_body)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E99151;strokeColor=none;fontColor=#FFFFFF;fontFamily=system-ui, -apple-system, PingFang SC, Microsoft YaHei, sans-serif;fontSize=13;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="155" width="170" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="request" value="发送 webhook&lt;br&gt;body + X-Signature" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#005D7B;strokeColor=none;fontColor=#FFFFFF;fontFamily=system-ui, -apple-system, PingFang SC, Microsoft YaHei, sans-serif;fontSize=13;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="710" y="155" width="150" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="server" value="你的后端&lt;br&gt;webhook 接口" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#4CA497;strokeColor=none;fontColor=#FFFFFF;fontFamily=system-ui, -apple-system, PingFang SC, Microsoft YaHei, sans-serif;fontSize=13;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="710" y="315" width="150" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="verify" value="重新计算 expected_signature&lt;br&gt;再和请求头签名比较" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E99151;strokeColor=none;fontColor=#FFFFFF;fontFamily=system-ui, -apple-system, PingFang SC, Microsoft YaHei, sans-serif;fontSize=13;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="315" width="170" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="decision" value="签名一致？" style="rhombus;whiteSpace=wrap;html=1;fillColor=#005D7B;strokeColor=none;fontColor=#FFFFFF;fontFamily=system-ui, -apple-system, PingFang SC, Microsoft YaHei, sans-serif;fontSize=13;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="305" width="100" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="accept" value="处理业务&lt;br&gt;更新订单 / 记录事件" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#4CA497;strokeColor=none;fontColor=#FFFFFF;fontFamily=system-ui, -apple-system, PingFang SC, Microsoft YaHei, sans-serif;fontSize=13;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="285" width="150" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="reject" value="拒绝请求&lt;br&gt;伪造或被篡改" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DC2626;strokeColor=none;fontColor=#FFFFFF;fontFamily=system-ui, -apple-system, PingFang SC, Microsoft YaHei, sans-serif;fontSize=13;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="380" width="150" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="note" value="记住：HMAC 不加密内容，它验证“谁发的”和“内容有没有被改”。" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEF6FF;strokeColor=#CBD5E1;fontColor=#2D3748;fontFamily=system-ui, -apple-system, PingFang SC, Microsoft YaHei, sans-serif;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="475" width="520" height="44" as="geometry"/>
+        </mxCell>
+        <mxCell id="e1" value="准备请求" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;strokeWidth=2;strokeColor=#94A3B8;labelBackgroundColor=#F8FAFC;fontFamily=system-ui, -apple-system, PingFang SC, Microsoft YaHei, sans-serif;fontSize=12;fontColor=#64748B;" edge="1" source="sender" target="body" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;strokeWidth=2;strokeColor=#94A3B8;" edge="1" source="body" target="sign" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;strokeWidth=2;strokeColor=#94A3B8;" edge="1" source="secret1" target="sign" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e4" value="带签名发送" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;strokeWidth=2;strokeColor=#94A3B8;labelBackgroundColor=#F8FAFC;fontFamily=system-ui, -apple-system, PingFang SC, Microsoft YaHei, sans-serif;fontSize=12;fontColor=#64748B;" edge="1" source="sign" target="request" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e5" value="POST /webhook" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;strokeWidth=2;strokeColor=#94A3B8;labelBackgroundColor=#F8FAFC;fontFamily=system-ui, -apple-system, PingFang SC, Microsoft YaHei, sans-serif;fontSize=12;fontColor=#64748B;" edge="1" source="request" target="server" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e6" value="取 raw body + signature" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;strokeWidth=2;strokeColor=#94A3B8;labelBackgroundColor=#F8FAFC;fontFamily=system-ui, -apple-system, PingFang SC, Microsoft YaHei, sans-serif;fontSize=12;fontColor=#64748B;" edge="1" source="server" target="verify" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e7" value="比较" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;strokeWidth=2;strokeColor=#94A3B8;labelBackgroundColor=#F8FAFC;fontFamily=system-ui, -apple-system, PingFang SC, Microsoft YaHei, sans-serif;fontSize=12;fontColor=#64748B;" edge="1" source="verify" target="decision" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e8" value="是" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;strokeWidth=2;strokeColor=#4CA497;labelBackgroundColor=#F8FAFC;fontFamily=system-ui, -apple-system, PingFang SC, Microsoft YaHei, sans-serif;fontSize=12;fontColor=#4CA497;" edge="1" source="decision" target="accept" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e9" value="否" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;strokeWidth=2;strokeColor=#DC2626;labelBackgroundColor=#F8FAFC;fontFamily=system-ui, -apple-system, PingFang SC, Microsoft YaHei, sans-serif;fontSize=12;fontColor=#DC2626;" edge="1" source="decision" target="reject" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

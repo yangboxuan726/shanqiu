@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2026-06-04T00:00:00.000Z" agent="drawio-chart" version="24.0.0">
+  <diagram name="RAG MCP Tool Calling Compare" id="rag-mcp-tool-calling-compare">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="900" pageHeight="560" math="0" shadow="0" background="#F8FAFC">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="RAG、工具调用、MCP 到底差在哪？" style="text;html=1;strokeColor=none;fillColor=none;fontFamily=system-ui, -apple-system, PingFang SC, Microsoft YaHei, sans-serif;fontSize=24;fontStyle=1;fontColor=#2D3748;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="120" y="30" width="660" height="42" as="geometry"/>
+        </mxCell>
+        <mxCell id="subtitle" value="可以先记成三件事：查资料、调能力、统一接系统" style="text;html=1;strokeColor=none;fillColor=none;fontFamily=system-ui, -apple-system, PingFang SC, Microsoft YaHei, sans-serif;fontSize=13;fontColor=#64748B;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="140" y="72" width="620" height="28" as="geometry"/>
+        </mxCell>
+        <mxCell id="user" value="用户问题&lt;br&gt;“订单 A001 能退吗？”" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#005D7B;strokeColor=none;fontColor=#FFFFFF;fontFamily=system-ui, -apple-system, PingFang SC, Microsoft YaHei, sans-serif;fontSize=13;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="130" width="150" height="62" as="geometry"/>
+        </mxCell>
+        <mxCell id="aiapp" value="AI 应用&lt;br&gt;组织上下文和调用结果" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0891B2;strokeColor=none;fontColor=#FFFFFF;fontFamily=system-ui, -apple-system, PingFang SC, Microsoft YaHei, sans-serif;fontSize=13;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="375" y="130" width="150" height="62" as="geometry"/>
+        </mxCell>
+        <mxCell id="answer" value="回答用户&lt;br&gt;规则 + 订单状态" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#4CA497;strokeColor=none;fontColor=#FFFFFF;fontFamily=system-ui, -apple-system, PingFang SC, Microsoft YaHei, sans-serif;fontSize=13;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="130" width="150" height="62" as="geometry"/>
+        </mxCell>
+        <mxCell id="rag" value="RAG&lt;br&gt;&lt;b&gt;查资料再回答&lt;/b&gt;&lt;br&gt;&lt;br&gt;退款规则&lt;br&gt;产品文档&lt;br&gt;内部知识库" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#4CA497;strokeColor=none;fontColor=#FFFFFF;fontFamily=system-ui, -apple-system, PingFang SC, Microsoft YaHei, sans-serif;fontSize=13;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="265" width="220" height="132" as="geometry"/>
+        </mxCell>
+        <mxCell id="tool" value="工具调用&lt;br&gt;&lt;b&gt;调用函数 / API&lt;/b&gt;&lt;br&gt;&lt;br&gt;get_order&lt;br&gt;create_refund&lt;br&gt;send_email" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E99151;strokeColor=none;fontColor=#FFFFFF;fontFamily=system-ui, -apple-system, PingFang SC, Microsoft YaHei, sans-serif;fontSize=13;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="265" width="220" height="132" as="geometry"/>
+        </mxCell>
+        <mxCell id="mcp" value="MCP&lt;br&gt;&lt;b&gt;统一接外部系统&lt;/b&gt;&lt;br&gt;&lt;br&gt;Resources&lt;br&gt;Tools&lt;br&gt;Prompts" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#7C3AED;strokeColor=none;fontColor=#FFFFFF;fontFamily=system-ui, -apple-system, PingFang SC, Microsoft YaHei, sans-serif;fontSize=13;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="610" y="265" width="220" height="132" as="geometry"/>
+        </mxCell>
+        <mxCell id="kb" value="知识库 / 文档" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E4C189;strokeColor=none;fontColor=#2D3748;fontFamily=system-ui, -apple-system, PingFang SC, Microsoft YaHei, sans-serif;fontSize=13;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="430" width="160" height="48" as="geometry"/>
+        </mxCell>
+        <mxCell id="api" value="订单 / 工单 / 邮件 API" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E4C189;strokeColor=none;fontColor=#2D3748;fontFamily=system-ui, -apple-system, PingFang SC, Microsoft YaHei, sans-serif;fontSize=13;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="430" width="160" height="48" as="geometry"/>
+        </mxCell>
+        <mxCell id="systems" value="多个外部系统&lt;br&gt;统一暴露给 AI 客户端" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E4C189;strokeColor=none;fontColor=#2D3748;fontFamily=system-ui, -apple-system, PingFang SC, Microsoft YaHei, sans-serif;fontSize=13;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="430" width="160" height="48" as="geometry"/>
+        </mxCell>
+        <mxCell id="note" value="记住：RAG 让模型有资料可看，工具调用让模型有事情可做，MCP 让资料和工具更容易统一接入。" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#BFDBFE;fontColor=#2D3748;fontFamily=system-ui, -apple-system, PingFang SC, Microsoft YaHei, sans-serif;fontSize=14;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="135" y="505" width="630" height="38" as="geometry"/>
+        </mxCell>
+        <mxCell id="e1" value="提问" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;strokeWidth=2;strokeColor=#94A3B8;labelBackgroundColor=#F8FAFC;fontFamily=system-ui, -apple-system, PingFang SC, Microsoft YaHei, sans-serif;fontSize=12;fontColor=#64748B;" edge="1" source="user" target="aiapp" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e2" value="生成回答" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;strokeWidth=2;strokeColor=#94A3B8;labelBackgroundColor=#F8FAFC;fontFamily=system-ui, -apple-system, PingFang SC, Microsoft YaHei, sans-serif;fontSize=12;fontColor=#64748B;" edge="1" source="aiapp" target="answer" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e3" value="找规则" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;strokeWidth=2;strokeColor=#94A3B8;labelBackgroundColor=#F8FAFC;fontFamily=system-ui, -apple-system, PingFang SC, Microsoft YaHei, sans-serif;fontSize=12;fontColor=#64748B;" edge="1" source="aiapp" target="rag" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e4" value="查状态 / 执行动作" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;strokeWidth=2;strokeColor=#94A3B8;labelBackgroundColor=#F8FAFC;fontFamily=system-ui, -apple-system, PingFang SC, Microsoft YaHei, sans-serif;fontSize=12;fontColor=#64748B;" edge="1" source="aiapp" target="tool" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e5" value="标准接入" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;strokeWidth=2;strokeColor=#94A3B8;labelBackgroundColor=#F8FAFC;fontFamily=system-ui, -apple-system, PingFang SC, Microsoft YaHei, sans-serif;fontSize=12;fontColor=#64748B;" edge="1" source="mcp" target="tool" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;strokeWidth=2;strokeColor=#94A3B8;" edge="1" source="rag" target="kb" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;strokeWidth=2;strokeColor=#94A3B8;" edge="1" source="tool" target="api" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;strokeWidth=2;strokeColor=#94A3B8;" edge="1" source="mcp" target="systems" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
