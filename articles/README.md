@@ -2,10 +2,12 @@
 
 > 最新文章在最上面。GitHub / Gitee 的文件列表默认按文件名正序显示，可以从这里找最近更新。
 
-共 11 篇。
+共 13 篇。
 
 | 日期 | 文章 |
 | --- | --- |
+| 2026-06-09 | [后端视角看 AutoGen（下）：Team、Core 和 Workflow 怎么理解？](./2026-06-09-autogen-team-core-workflow.md) |
+| 2026-06-09 | [后端视角看 AutoGen（上）：它到底在组织什么？](./2026-06-09-autogen-core-mechanism-part-1.md) |
 | 2026-06-08 | [JWT 里的字符串为什么没有等号？base64url 到底在干什么](./2026-06-08-base64url-no-padding.md) |
 | 2026-06-05 | [ReAct Agent 怎么避免一直循环？](./2026-06-05-react-agent-stop-loop.md) |
 | 2026-06-04 | [ReAct 和 Workflow 到底怎么选？](./2026-06-04-react-vs-workflow.md) |
