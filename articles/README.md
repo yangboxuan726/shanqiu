@@ -2,10 +2,11 @@
 
 > 最新文章在最上面。GitHub / Gitee 的文件列表默认按文件名正序显示，可以从这里找最近更新。
 
-共 17 篇。
+共 18 篇。
 
 | 日期 | 文章 |
 | --- | --- |
+| 2026-06-14 | [Redis Stream 到底适合做什么？](./2026-06-14-redis-stream-message-queue.md) |
 | 2026-06-13 | [Agent 到底是不是 Workflow？我终于想明白了](./2026-06-13-agent-vs-workflow.md) |
 | 2026-06-12 | [看完 Kimi K2.7 Code，我更确定：AI 编程拼的是工程闭环](./2026-06-12-kimi-k2-7-code-agent-engineering.md) |
 | 2026-06-10 | [看完 Fable 5，我确定：Agent 要工程化了](./2026-06-10-claude-fable-5-agent-engineering.md) |
