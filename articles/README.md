@@ -2,10 +2,11 @@
 
 > 最新文章在最上面。GitHub / Gitee 的文件列表默认按文件名正序显示，可以从这里找最近更新。
 
-共 19 篇。
+共 20 篇。
 
 | 日期 | 文章 |
 | --- | --- |
+| 2026-06-20 | [MCP 到底是什么？先别把它想成神秘协议](./2026-06-20-mcp-explained.md) |
 | 2026-06-18 | [AI Agent 里的 Skill 到底是什么？](./2026-06-18-codex-skill-explained.md) |
 | 2026-06-14 | [Redis Stream 到底适合做什么？](./2026-06-14-redis-stream-message-queue.md) |
 | 2026-06-13 | [Agent 到底是不是 Workflow？我终于想明白了](./2026-06-13-agent-vs-workflow.md) |
