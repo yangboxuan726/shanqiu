@@ -2,10 +2,11 @@
 
 > 最新文章在最上面。GitHub / Gitee 的文件列表默认按文件名正序显示，可以从这里找最近更新。
 
-共 22 篇。
+共 23 篇。
 
 | 日期 | 文章 |
 | --- | --- |
+| 2026-06-22 | [Agent 的 Harness 到底是什么？别只盯着 Tools](./2026-06-22-agent-harness.md) |
 | 2026-06-22 | [Plan-and-Solve 到底是什么？Agent 为什么要先想清楚再动手？](./2026-06-22-agent-plan-and-solve.md) |
 | 2026-06-21 | [Reflection 到底是什么？Agent 为什么要回头看？](./2026-06-21-agent-reflection.md) |
 | 2026-06-20 | [MCP 到底是什么？先别把它想成神秘协议](./2026-06-20-mcp-explained.md) |
