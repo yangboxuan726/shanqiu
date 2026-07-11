@@ -2,14 +2,15 @@
 
 > 最新文章在最上面。GitHub / Gitee 的文件列表默认按文件名正序显示，可以从这里找最近更新。
 
-共 25 篇。
+共 26 篇。
 
 | 日期 | 文章 |
 | --- | --- |
+| 2026-07-10 | [今天打开 Codex，发现它没了，GPT-5.6 也来了](./2026-07-10-gpt-5-6-codex-update.md) |
 | 2026-06-28 | [GPT-5.6 来了：太阳、地球、月亮背后是什么](./2026-06-28-gpt-5-6-sol-terra-luna.md) |
 | 2026-06-25 | [都用大模型了，为什么 RAG 里还离不开 BM25？](./2026-06-25-bm25-explained.md) |
-| 2026-06-22 | [Agent 的 Harness 到底是什么？别只盯着 Tools](./2026-06-22-agent-harness.md) |
 | 2026-06-22 | [Plan-and-Solve 到底是什么？Agent 为什么要先想清楚再动手？](./2026-06-22-agent-plan-and-solve.md) |
+| 2026-06-22 | [Agent 的 Harness 到底是什么？别只盯着 Tools](./2026-06-22-agent-harness.md) |
 | 2026-06-21 | [Reflection 到底是什么？Agent 为什么要回头看？](./2026-06-21-agent-reflection.md) |
 | 2026-06-20 | [MCP 到底是什么？先别把它想成神秘协议](./2026-06-20-mcp-explained.md) |
 | 2026-06-18 | [AI Agent 里的 Skill 到底是什么？](./2026-06-18-codex-skill-explained.md) |
