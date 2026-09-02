@@ -2,17 +2,23 @@
 
 > 最新文章在最上面。GitHub / Gitee 的文件列表默认按文件名正序显示，可以从这里找最近更新。
 
-共 33 篇。
+共 39 篇。
 
 | 日期 | 文章 |
 | --- | --- |
+| 2026-09-02 | [Claude Fable 5.1：科学 Agent 跑分翻倍，但真正的升级在任务后半程](./2026-09-02-claude-fable-5-1.md) |
+| 2026-08-29 | [腾讯混元 Hy4 preview 开源，开始指挥多个 Codex 干活](./2026-08-29-tencent-hy4-preview.md) |
+| 2026-08-23 | [Redis 7.0 废弃 ziplist 后，listpack 到底长什么样？](./2026-08-23-redis-listpack.md) |
+| 2026-08-19 | [被 Codex 连问 50 个问题后，我开始强烈推荐这个 Skill](./2026-08-19-grill-me-skill.md) |
 | 2026-08-17 | [Codex 也支持百万上下文了？](./2026-08-17-codex-million-context.md) |
 | 2026-08-14 | [智谱 GLM-5.3 发布，国内大模型要杀疯了？](./2026-08-14-glm-5-3.md) |
+| 2026-08-14 | [Gemini 3.7 Flash 发布，距 3.6 只有 23 天](./2026-08-14-gemini-3-7-flash.md) |
 | 2026-08-13 | [DeepSeek-V4-Pro 正式版发布，Agent 冲进第一梯队](./2026-08-13-deepseek-v4-pro.md) |
 | 2026-08-03 | [Qwen3.8-Max 发布：编程冲进全球前四，文本能力也大幅提升](./2026-08-03-qwen3-8-max.md) |
 | 2026-07-31 | [DeepSeek-V4-Flash 正式版：参数没变，Agent 能力却暴涨](./2026-07-31-deepseek-v4-flash.md) |
 | 2026-07-25 | [Claude Opus 5 发布：性能逼近 Fable 5，价格只有一半](./2026-07-25-claude-opus-5.md) |
 | 2026-07-23 | [GPT-5.6 Sol 的提示词怎么写？Codex 老大哥发话了](./2026-07-23-gpt-5-6-sol-prompting.md) |
+| 2026-07-20 | [为什么 WorkBuddy 突然火了？AI 终于不只陪你聊天了](./2026-07-20-workbuddy-ai-agent-office.md) |
 | 2026-07-10 | [今天打开 Codex，发现它没了，GPT-5.6 也来了](./2026-07-10-gpt-5-6-codex-update.md) |
 | 2026-06-28 | [GPT-5.6 来了：太阳、地球、月亮背后是什么](./2026-06-28-gpt-5-6-sol-terra-luna.md) |
 | 2026-06-25 | [都用大模型了，为什么 RAG 里还离不开 BM25？](./2026-06-25-bm25-explained.md) |
