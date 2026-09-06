@@ -2,10 +2,11 @@
 
 > 最新文章在最上面。GitHub / Gitee 的文件列表默认按文件名正序显示，可以从这里找最近更新。
 
-共 39 篇。
+共 40 篇。
 
 | 日期 | 文章 |
 | --- | --- |
+| 2026-09-05 | [GPT-6 Astra：「Welcome to the AGI era」](./2026-09-05-gpt-6-astra.md) |
 | 2026-09-02 | [Claude Fable 5.1：科学 Agent 跑分翻倍，但真正的升级在任务后半程](./2026-09-02-claude-fable-5-1.md) |
 | 2026-08-29 | [腾讯混元 Hy4 preview 开源，开始指挥多个 Codex 干活](./2026-08-29-tencent-hy4-preview.md) |
 | 2026-08-23 | [Redis 7.0 废弃 ziplist 后，listpack 到底长什么样？](./2026-08-23-redis-listpack.md) |
