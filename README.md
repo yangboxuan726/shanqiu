@@ -26,11 +26,19 @@
 
 ```text
 shanqiu
-├── articles/   # 文章归档
-├── covers/     # 文章封面图
-├── LICENSE     # 开源许可证
-└── README.md   # 仓库说明
+├── articles/
+│   ├── README.md                         # 全部文章索引
+│   ├── 2026-09/                          # 按月份归档
+│   │   └── 2026-09-22-kimi-mimo-desktop-agents/
+│   │       ├── article.md                # 正文
+│   │       ├── cover.png                 # 封面（有封面的文章）
+│   │       └── assets/                   # 正文引用的图片
+│   └── ...
+├── LICENSE                               # 开源许可证
+└── README.md                             # 仓库说明
 ```
+
+每篇文章的正文、封面和正文引用图片放在同一个目录中；本地预览文件不上传。
 
 ## 更新说明
 
