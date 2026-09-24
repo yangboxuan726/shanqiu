@@ -2,10 +2,11 @@
 
 > 最新文章在最上面。GitHub / Gitee 的文件列表默认按文件名正序显示，可以从这里找最近更新。
 
-共 41 篇。
+共 42 篇。
 
 | 日期 | 文章 |
 | --- | --- |
+| 2026-09-24 | [GPT-6 Sol PK Opus 5.5，真完败了？](./2026-09/2026-09-24-opus-5-5-gpt-6-sol-luna/article.md) |
 | 2026-09-22 | [MiMo Desktop vs Kimi Code：模型一样，Agent 为什么差这么多？](./2026-09/2026-09-22-kimi-mimo-desktop-agents/article.md) |
 | 2026-09-05 | [GPT-6 Astra：「Welcome to the AGI era」](./2026-09/2026-09-05-gpt-6-astra/article.md) |
 | 2026-09-02 | [Claude Fable 5.1：科学 Agent 跑分翻倍，但真正的升级在任务后半程](./2026-09/2026-09-02-claude-fable-5-1/article.md) |
