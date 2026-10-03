@@ -2,10 +2,11 @@
 
 > 最新文章在最上面。GitHub / Gitee 的文件列表默认按文件名正序显示，可以从这里找最近更新。
 
-共 45 篇。
+共 46 篇。
 
 | 日期 | 文章 |
 | --- | --- |
+| 2026-10-02 | [Grok Bot、Dots、Cue、Muse：四家 AI Bot 到底有什么不一样？](./2026-10/2026-10-02-ai-bot-comparison/article.md) |
 | 2026-09-30 | [不看 Benchmark，我拿两组视觉题实测 GPT-6.1 Sol 和 GLM-5.3](./2026-09/2026-09-30-sol-6-1-sol-glm-5-3-svg-html-test/article.md) |
 | 2026-09-30 | [OpenAI 开发者大会，这次连 AI 的工位都安排好了](./2026-09/2026-09-30-openai-devday-2026/article.md) |
 | 2026-09-28 | [Pi Agent 与 DeepSeek Harness 的设计哲学](./2026-09/2026-09-28-pi-agent-deepseek-harness-philosophy/article.md) |
